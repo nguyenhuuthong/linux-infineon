@@ -399,12 +399,16 @@
 #endif
 
 &i2c1 {
-	clock-frequency = <400000>;
+	clock-frequency = <100000>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_i2c1>;
 	status = "okay";
 
-};
+	tpm_i2c_atmel: tpm_i2c_atmel@29 {
+		compatible = "atmel,tpm_i2c_atmel";
+		reg = <0x29>;
+	};
+ };
 
 
 &i2c2 {
