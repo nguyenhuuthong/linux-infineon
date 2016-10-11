@@ -404,9 +404,9 @@
 	pinctrl-0 = <&pinctrl_i2c1>;
 	status = "okay";
 
-	tpm_i2c_atmel: tpm_i2c_atmel@29 {
-		compatible = "atmel,tpm_i2c_atmel";
-		reg = <0x29>;
+	tpm_i2c_infineon: tpm_i2c_infineon@20 {
+		compatible = "infineon,tpm_i2c_infineon";
+		reg = <0x20>;
 	};
  };
 
