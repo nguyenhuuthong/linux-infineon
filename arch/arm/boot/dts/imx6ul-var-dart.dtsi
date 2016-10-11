@@ -399,15 +399,15 @@
 #endif
 
 &i2c1 {
-	clock-frequency = <100000>;
+	clock-frequency = <400000>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_i2c1>;
 	status = "okay";
 
-	tpm_i2c_infineon: tpm_i2c_infineon@20 {
-		compatible = "infineon,tpm_i2c_infineon";
-		reg = <0x20>;
-	};
+   tpm {
+        compatible = "infineon,slb9645tt";
+        reg = <0x20>;
+    };
  };
 
 
