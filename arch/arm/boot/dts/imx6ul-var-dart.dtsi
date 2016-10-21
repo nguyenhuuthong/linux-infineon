@@ -308,7 +308,7 @@
 
 	/* dr_mode: One of "host", "peripheral" or "otg". Defaults to "otg" */
 &usbotg1 {
-	dr_mode = "host";
+	dr_mode = "peripheral";
 	disable-over-current;
 	status = "okay";
 };
