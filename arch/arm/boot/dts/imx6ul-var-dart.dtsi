@@ -308,7 +308,7 @@
 
 	/* dr_mode: One of "host", "peripheral" or "otg". Defaults to "otg" */
 &usbotg1 {
-	dr_mode = "peripheral";
+	dr_mode = "host";
 	disable-over-current;
 	status = "okay";
 };
@@ -399,7 +399,7 @@
 #endif
 
 &i2c1 {
-	clock-frequency = <400000>;
+	clock-frequency = <100000>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_i2c1>;
 	status = "okay";
